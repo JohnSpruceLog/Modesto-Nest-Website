@@ -1,11 +1,6 @@
 body {
-    font-family:'Times New Roman', Times, serif
-    
-}
-
-section, header, footer{
-    padding: 40px;
-    border: 1px solid #ccc;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 .Header-branding-logo {
@@ -19,14 +14,20 @@ section, header, footer{
     display: flex;
     gap: 2rem;
     min-width: 0;
+    
 }
 
+.Header{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
 .Header-nav-item {
     white-space: nowrap;
     padding: 0;
 }
 
-.Header {
+.Header-nav{
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
@@ -38,4 +39,13 @@ section, header, footer{
 
 .Header-nav-choices{
     margin-left: auto;
+}
+
+.Header-content{
+    background-image: url(https://digitalnest.org/wp-content/themes/kadence-child/assets/landing-page/images/backgrounds/gold.webp);
+    background-size: 100% auto, cover;
+    background-position: 100% auto, center;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    padding: 0;
 }
