@@ -3,6 +3,12 @@ body {
     margin: 0;
 }
 
+header {
+    position: relative;
+    z-index: 10;
+    background: white;
+}
+
 .Header-branding-logo {
     width: 100%;
     max-width: 60px;
@@ -42,10 +48,97 @@ body {
 }
 
 .Header-content{
-    background-image: url(https://digitalnest.org/wp-content/themes/kadence-child/assets/landing-page/images/backgrounds/gold.webp);
-    background-size: 100% auto, cover;
-    background-position: 100% auto, center;
-    background-repeat: no-repeat, no-repeat;
-    height: 100vh;
+
+    
     padding: 0;
+}
+
+.homepage-content{
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.w-full{
+    width: 100%;
+}
+
+.hero-container {
+    background-image: url('https://digitalnest.org/wp-content/themes/kadence-child/assets/landing-page/images/backgrounds/gold.webp');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.hero-info{
+    display:flex;
+    flex-direction:column;
+
+    width:60%;
+}
+
+.hero-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    width:100%;
+    height: 100%;
+    max-width:1200px;
+
+    margin:0 auto;
+}
+
+img{
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+}
+
+.hero-image{
+    position:absolute;
+
+    bottom:0;
+    right:-150px;
+
+    max-width:850px;
+
+    z-index: 0;
+}
+
+.hero-image-container{
+    width:40%;
+    height: 100%;
+    position:relative;
+}
+
+.hero-button{
+    padding-left:2%;
+    padding-right: 2%;
+}
+
+.about-container{
+    background-image: url("https://images.squarespace-cdn.com/content/5f0ce7910aa5bf68e7ce8ccb/1597770319191-XL0CKWW4ASL7Z8UTFX59/site-background.jpg?content-type=image%2Fjpeg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.about-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
