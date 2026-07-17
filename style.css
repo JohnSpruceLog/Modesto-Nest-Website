@@ -142,3 +142,55 @@ img{
     object-fit: cover;
     z-index: 0;
 }
+
+.connect-container{
+    background-image: url("https://img.magnific.com/free-photo/dark-abstract-background_1048-1920.jpg?semt=ais_hybrid&w=740&q=80");
+}
+
+.connect-info{
+    display: flex;
+    flex-direction: row;       
+    justify-content: center;
+    align-items: center; 
+}
+
+.connect-section{
+    display:flex;
+    flex-direction: column;
+}
+
+.test-button-one{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/040/973/670/non_2x/funny-red-number-one-1-cartoon-character-showing-hand-number-one-vector.jpg');
+
+    width: auto;
+    height: auto;
+
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    
+    display: flex;
+}
+
+.connect-button-one img {
+    width:25%;
+    height:25%;
+    object-fit:contain;
+}
+
+.connect-button-one {
+    position: relative;
+    display: block;
+
+    width: 25%;
+    height: 25%;
+}
+
+.connect-button-text {
+    position: absolute;
+
+    transform: translate(100%, -300%);
+
+    color: black;
+    text-align: center;
+}
