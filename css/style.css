@@ -1,0 +1,236 @@
+@import url("animation.css");
+@import url("button.css");
+@import url("images.css");
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    background: white;
+}
+
+
+.Header-nav {
+    display: flex;
+    gap: 2rem;
+    min-width: 0;
+    
+}
+
+.Header{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.Header-nav-item {
+    white-space: nowrap;
+    padding: 0;
+}
+
+.Header-nav{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.Header-collect {
+    padding: 0;
+}
+
+.Header-nav-choices{
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.Header-content{
+
+    
+    padding: 0;
+}
+
+.homepage-content{
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.w-full{
+    width: 100%;
+}
+
+.hero-container {
+    background-image: url('https://digitalnest.org/wp-content/themes/kadence-child/assets/landing-page/images/backgrounds/gold.webp');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.hero-info{
+    display:flex;
+    flex-direction:column;
+
+    width:60%;
+}
+
+.hero-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    width:100%;
+    height: 100%;
+    max-width:1200px;
+
+    margin:0 auto;
+}
+
+
+.about-container{
+    background-image: url("https://images.squarespace-cdn.com/content/5f0ce7910aa5bf68e7ce8ccb/1597770319191-XL0CKWW4ASL7Z8UTFX59/site-background.jpg?content-type=image%2Fjpeg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.connect-container{
+    background-image: url("https://img.magnific.com/free-photo/dark-abstract-background_1048-1920.jpg?semt=ais_hybrid&w=740&q=80");
+}
+
+.connect-info{
+    display: flex;
+    flex-direction: row;       
+    justify-content: center;
+    align-items: center; 
+}
+
+.connect-section{
+    display:flex;
+    flex-direction: column;
+}
+
+.programs-info{
+    flex-direction: row;
+    display: flex;
+    top: 0;
+}
+
+.programs-section{
+    display:flex;
+    flex-direction:column;
+    top: 0;
+}
+
+.programs-container {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/375/040/small/modern-white-background-free-vector.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: top;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.program-mosiac-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    gap: 2rem;
+}
+
+.program-mosiac-item{
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    color: white;
+}
+
+.program-mosiac-container {
+    article:nth-child(1){
+        background-image:
+            linear-gradient(
+                to top,
+                rgba(243, 142, 9, 0.99) 10%,
+                rgba(231, 144, 12, 0) 40%,
+                rgba(236, 161, 11, 0) 100%
+        ),
+        url('https://static.vecteezy.com/system/resources/previews/040/973/670/non_2x/funny-red-number-one-1-cartoon-character-showing-hand-number-one-vector.jpg');
+
+    }
+}
+
+.program-mosiac-container {
+    article:nth-child(2){
+        background-image:
+            linear-gradient(
+                to top,
+                rgba(233, 13, 130, .99) 10%,
+                rgba(229, 9, 218, 0) 40%,
+                rgba(232, 12, 247, 0) 100%
+        ),
+        url('https://preview.redd.it/zombies-front-facing-looks-weird-in-that-replanted-trailer-v0-acsv94byvvbg1.jpeg?width=942&format=pjpg&auto=webp&s=577e03c7cfcd5977e7aa802fb21162c261ab8180');
+
+    }
+}
+
+.program-mosiac-container {
+    article:nth-child(3){
+        background-image:
+            linear-gradient(
+                to top,
+                rgba(21, 10, 233, .99) 10%,
+                rgba(45, 9, 229, 0) 40%,
+                rgba(19, 74, 226, 0) 100%
+        ),
+        url('https://static.wikia.nocookie.net/legobatman/images/9/95/Clayface.jpg/revision/latest?cb=20100514002252');
+    }
+}
+
+.program-mosiac-container article{
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 15rem;
+    height: 95%;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 1rem;
+    border: 3px solid white;
+}
+
+.program-mosiac-container article {
+    transition: transform 0.3s ease;
+}
+
+@media (hover: hover) {
+    .program-mosiac-container article:hover {
+        transform: scale(1.15);
+    }
+}
