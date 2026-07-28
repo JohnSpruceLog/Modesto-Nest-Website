@@ -132,3 +132,26 @@ img{
     height: 250px;
 
 }
+
+.member-statement-top-image {
+    width: 12rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.member-statement-bottom{
+    object-fit: cover;
+    width: 25%;
+    display: block;
+}
+
+.footer-row-social-image{
+    width: 1rem;
+    height: auto;
+
+    aspect-ratio:1/1;
+    object-fit: cover;
+    display: block;
+}

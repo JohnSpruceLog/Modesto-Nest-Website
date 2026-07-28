@@ -1,10 +1,24 @@
 @import url("animation.css");
 @import url("button.css");
 @import url("images.css");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
-    font-family:'Times New Roman', Times, serif;
+    font-family:"Nunito", sans-serif;
     margin: 0;
+}
+
+.font-header{
+    font-family:"IBM Plex Sans", sans-serif;
+}
+
+.font-text{
+    font-family:"Nunito", sans-serif;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 header {
@@ -178,6 +192,11 @@ header {
     align-items: center;
 }
 
+.members-info-text{
+    padding: 0px;
+    margin: 1rem;
+}
+
 .members-container{
     background-image: url('https://digitalnest.org/wp-content/themes/kadence-child/assets/landing-page/images/backgrounds/mission.webp');
     width: 100%;
@@ -189,4 +208,65 @@ header {
     align-items: top;
     justify-content: center;
     position: relative;
+}
+
+.members-statement-top-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* spacing between images */
+}
+
+.members-statement-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.CAT-container{
+    background-image: url('https://digitalnest.org/wp-content/uploads/2026/05/black_grain.webp');
+}
+
+.Footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-row-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer-row-section-format{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.footer-row-section-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-row-section-items a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-row-socials{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.footer-row-socials-item{
+    margin-right: 1rem;
 }
