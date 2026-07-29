@@ -64,7 +64,7 @@ img{
                 rgba(231, 144, 12, 0) 40%,
                 rgba(236, 161, 11, 0) 100%
         ),
-        url('https://static.vecteezy.com/system/resources/previews/040/973/670/non_2x/funny-red-number-one-1-cartoon-character-showing-hand-number-one-vector.jpg');
+        url('../images/Image_About_1.png');
 
     }
 }
@@ -78,7 +78,7 @@ img{
                 rgba(229, 9, 218, 0) 40%,
                 rgba(232, 12, 247, 0) 100%
         ),
-        url('https://preview.redd.it/zombies-front-facing-looks-weird-in-that-replanted-trailer-v0-acsv94byvvbg1.jpeg?width=942&format=pjpg&auto=webp&s=577e03c7cfcd5977e7aa802fb21162c261ab8180');
+        url('../images/Image_About_2.png');
 
     }
 }
@@ -92,7 +92,7 @@ img{
                 rgba(45, 9, 229, 0) 40%,
                 rgba(19, 74, 226, 0) 100%
         ),
-        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR213q60cOFvxlUjUkkVqKOofMyd2XbXojwPE2A8IYAZ12D7_ncWdvk7kM&s=10');
+        url('../images/Image_About_3.png');
     }
 }
 
@@ -129,12 +129,12 @@ img{
 .socials-image{
     object-fit:cover;
     width:100%;
-    height: 250px;
+    height: auto;
 
 }
 
 .member-statement-top-image {
-    width: 12rem;
+    width: 35rem;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -143,8 +143,10 @@ img{
 
 .member-statement-bottom{
     object-fit: cover;
-    width: 25%;
+    width: 71.25rem;
+    height:auto;
     display: block;
+    padding-top:1rem;
 }
 
 .footer-row-social-image{
