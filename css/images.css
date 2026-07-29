@@ -30,8 +30,8 @@ img{
 
 
 .Header-branding-logo {
-    width: 100%;
-    object-fit: cover;  
+    height: 70px;
+    width: auto;
 }
 
 

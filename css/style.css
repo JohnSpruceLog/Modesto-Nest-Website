@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+main{
+    padding-top: 80px;
+}
+
 body {
     font-family:"Nunito", sans-serif;
     margin: 0;
@@ -22,7 +26,6 @@ body {
 }
 
 header {
-    position: relative;
     z-index: 10;
     background: white;
 }
@@ -35,11 +38,26 @@ header {
     
 }
 
-.Header{
-    border: 1px solid black;
+.Header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
 }
+
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+}
+
 .Header-nav-item {
     white-space: nowrap;
     padding: 0;
@@ -55,10 +73,12 @@ header {
     padding: 0;
 }
 
-.Header-nav-choices{
-    margin-left: auto;
-    margin-right: 1rem;
+.Header-nav-choices {
+    display: flex;
+    gap: 2rem;
+    margin-left: 0;
 }
+
 
 .Header-content{
 
@@ -195,7 +215,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
     margin-bottom: 0;
 }
 
@@ -236,6 +256,7 @@ header {
     gap: 20px;
     width: 100%;
     margin-top: 2rem;
+    justify-items: center; /* Center every grid item */
 }
 
 .members-statement-container img {
@@ -245,14 +266,44 @@ header {
     object-fit: cover;
 }
 
-.top-header{
+.top-header {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
+    gap: 2rem;
+
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    
+    max-height: 50px;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.banner.scrolled .top-header {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.banner.scrolled .top-header {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .CAT-container{
     background-image: url('https://digitalnest.org/wp-content/uploads/2026/05/black_grain.webp');
+}
+
+.action-statement-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.5rem;
 }
 
 .Footer{
@@ -260,6 +311,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
 }
 .footer-row-wrapper{
     display: flex;
