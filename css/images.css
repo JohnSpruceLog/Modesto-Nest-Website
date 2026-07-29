@@ -133,20 +133,11 @@ img{
 
 }
 
-.member-statement-top-image {
-    width: 35rem;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    display: block;
-}
 
-.member-statement-bottom{
-    object-fit: cover;
-    width: 71.25rem;
-    height:auto;
-    display: block;
-    padding-top:1rem;
+.member-statement-bottom {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 10px);
 }
 
 .footer-row-social-image{
@@ -157,3 +148,6 @@ img{
     object-fit: cover;
     display: block;
 }
+
+
+
