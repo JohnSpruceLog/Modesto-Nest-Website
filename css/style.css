@@ -9,8 +9,8 @@ p, h1, h2, h3, div, span {
     overflow-wrap: break-word;
 }
 
-html {
-    overflow-x: clip;
+* {
+    outline: 1px solid red;
 }
 
 main{
@@ -39,13 +39,6 @@ header {
     background: white;
 }
 
-
-.Header-nav {
-    display: flex;
-    gap: 2rem;
-    min-width: 0;
-    
-}
 
 .Header {
     display: flex;
@@ -80,12 +73,14 @@ header {
 
 .Header-collect {
     padding: 0;
+    min-width: 0;
 }
 
 .Header-nav-choices {
     display: flex;
     gap: 2rem;
     margin-left: 0;
+    min-width: 0;
 }
 
 
@@ -169,10 +164,21 @@ header {
     flex-direction: column;
 }
 
-.programs-info{
-    flex-direction: row;
+.programs-info {
     display: flex;
-    top: 0;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.programs-info h1,
+.programs-info p {
+    flex: 1;
+    min-width: 0;
+}
+
+.programs-info h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
 .programs-section{
@@ -201,10 +207,12 @@ header {
     
 }
 
-.program-mosiac-container-window{
+.program-mosiac-container-window {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
+
+
 
 .socials-container{
     height:auto;
