@@ -1,3 +1,4 @@
+// Determine whether user has scrolled & Mark banner
 const banner = document.querySelector(".banner");
 
 window.addEventListener("scroll", () => {

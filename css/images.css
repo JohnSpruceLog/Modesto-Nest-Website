@@ -11,15 +11,15 @@ img{
     box-sizing: inherit;
 }
 
-.hero-image{
+.hero-image {
     position:absolute;
-
     bottom:0;
-    right:-150px;
+    right:-200px;
 
-    max-width:850px;
+    width:min(850px, 60vw);
+    height:auto;
 
-    z-index: 0;
+    z-index:0;
 }
 
 .hero-image-container{
@@ -53,51 +53,8 @@ img{
     flex-direction: column;
 
     color: white;
-}
 
-.program-mosiac-container {
-    article:nth-child(1){
-        background-image:
-            linear-gradient(
-                to top,
-                rgba(243, 142, 9, 0.99) 10%,
-                rgba(231, 144, 12, 0) 40%,
-                rgba(236, 161, 11, 0) 100%
-        ),
-        url('../images/Image_About_1.png');
-
-    }
-}
-
-.program-mosiac-container {
-    article:nth-child(2){
-        background-image:
-            linear-gradient(
-                to top,
-                rgba(233, 13, 130, .99) 10%,
-                rgba(229, 9, 218, 0) 40%,
-                rgba(232, 12, 247, 0) 100%
-        ),
-        url('../images/Image_About_2.png');
-
-    }
-}
-
-.program-mosiac-container {
-    article:nth-child(3){
-        background-image:
-            linear-gradient(
-                to top,
-                rgba(21, 10, 233, .99) 10%,
-                rgba(45, 9, 229, 0) 40%,
-                rgba(19, 74, 226, 0) 100%
-        ),
-        url('../images/Image_About_3.png');
-    }
-}
-
-.program-mosiac-container article{
-   background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -109,6 +66,62 @@ img{
 
     border-radius: 1rem;
     border: 3px solid white;
+}
+
+.program-mosiac-container-1{
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(243, 142, 9, 0.99) 10%,
+            rgba(231, 144, 12, 0) 40%,
+            rgba(236, 161, 11, 0) 100%
+    ),
+    url('../images/Image_About_1.png');
+}
+
+.program-mosiac-container-2 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(233, 13, 130, .99) 10%,
+            rgba(229, 9, 218, 0) 40%,
+            rgba(232, 12, 247, 0) 100%
+    ),
+    url('../images/Image_About_2.png');
+}
+
+.program-mosiac-container-3 {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(21, 10, 233, .99) 10%,
+            rgba(45, 9, 229, 0) 40%,
+            rgba(19, 74, 226, 0) 100%
+    ),
+    url('../images/Image_About_3.png');
+}
+
+.program-mosiac-container-4{
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(104, 100, 177, 0.99) 10%,
+            rgba(45, 9, 229, 0) 40%,
+            rgba(19, 74, 226, 0) 100%
+    ),
+    url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0205e711-4add-457c-aec5-7163dd0ca612/djgwzrg-52efa153-8f60-4e3a-9dec-c9312d576fbd.png/v1/fill/w_1092,h_614/superman___png_by_gmg616_djgwzrg-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjE0IiwicGF0aCI6Ii9mLzAyMDVlNzExLTRhZGQtNDU3Yy1hZWM1LTcxNjNkZDBjYTYxMi9kamd3enJnLTUyZWZhMTUzLThmNjAtNGUzYS05ZGVjLWM5MzEyZDU3NmZiZC5wbmciLCJ3aWR0aCI6Ijw9MTA5MiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.mCQ4k32k5dsc8aX4q-dGDuEv7kBO-khcormR1FSOJdE');
+}
+
+.program-mosiac-container-5{
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(10, 233, 155, 0.99) 10%,
+            rgba(45, 9, 229, 0) 40%,
+            rgba(19, 74, 226, 0) 100%
+    ),
+    url('https://img.magnific.com/free-photo/single-banana-isolated-white-background_839833-17794.jpg');
 }
 
 .about-image{
@@ -148,6 +161,4 @@ img{
     object-fit: cover;
     display: block;
 }
-
-
 
