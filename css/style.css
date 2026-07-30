@@ -3,10 +3,22 @@
 @import url("images.css");
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url("fonts.css");
 
 p, h1, h2, h3, div, span {
     overflow-wrap: break-word;
+}
+
+/* *{
+    outline: 1px solid red !important;
+} */
+
+a {
+    text-decoration: none;
+}
+
+html {
+  overflow-x: clip;
 }
 
 main{
@@ -18,18 +30,6 @@ body {
     margin: 0;
 }
 
-.font-header{
-    font-size: 64px;
-    font-family:"IBM Plex Sans", sans-serif;
-}
-
-.font-text{
-    font-family:"Nunito", sans-serif;
-}
-
-.bold{
-    font-weight: bold;
-}
 
 header {
     z-index: 10;
@@ -44,6 +44,8 @@ header {
 
     width: 100%;
     padding: 1rem 2rem;
+    padding-top: 0;
+    padding-bottom: .5rem;
     box-sizing: border-box;
 }
 
@@ -98,8 +100,7 @@ header {
 }
 
 .hero-image-container {
-    width:40%;
-    height:100%;
+    box-sizing: inherit;
     position:relative;
 }
 
@@ -114,7 +115,8 @@ header {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    
+    overflow: hidden;
+
 }
 
 .hero-section {
@@ -214,6 +216,13 @@ header {
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+
+.program-mosiac-container-window::-webkit-scrollbar {
+    display: none;
 }
 
 .program-mosiac-container {
@@ -310,12 +319,12 @@ header {
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
-
     width: 100%;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
+    padding-bottom: 0;
     box-sizing: border-box;
     
-    max-height: 50px;
+    max-height: 100px;
     overflow: hidden;
     transition: all .3s ease;
 }

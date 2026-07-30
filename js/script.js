@@ -11,13 +11,31 @@ window.addEventListener("scroll", () => {
 
 
 
-// Allow carousel window to accept wheel as a scroll input
-let targetScroll = 0;
-let currentScroll = 0;
-let raf = null;
+// Infinite carousel
 
-// Infinite Carousel
 const carousel = document.querySelector(".carousel");
-const card = document.querySelector(".program-mosiac-item");
-const carouselWidth = carousel.offsetWidth;
-carouselWindow.scrollLeft = carouselWidth / 2 - (card.offsetWidth * 5);
+const carouselWindow = document.querySelector(".program-mosiac-container-window");
+
+const setWidth = carousel.scrollWidth / 3;
+
+// Start in the middle copy
+carouselWindow.scrollLeft = setWidth;
+
+carouselWindow.addEventListener("scroll", () => {
+
+    if (carouselWindow.scrollLeft <= 0) {
+        carouselWindow.style.scrollBehavior = "auto";
+        carouselWindow.scrollLeft += setWidth;
+        carouselWindow.style.scrollBehavior = "smooth";
+    }
+
+    if (carouselWindow.scrollLeft >= setWidth * 2) {
+        carouselWindow.style.scrollBehavior = "auto";
+        carouselWindow.scrollLeft -= setWidth;
+        carouselWindow.style.scrollBehavior = "smooth";
+    }
+
+});
+
+// const carousel = document.querySelector(".carousel");
+// const carouselWindow =  

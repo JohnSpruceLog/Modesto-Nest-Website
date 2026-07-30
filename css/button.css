@@ -6,4 +6,21 @@
 
 .header-top-buttons{
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 5rem;
+    margin-left: 0.5rem;
+}
+
+.black-button {
+    background: black;
+    color: white;
 }

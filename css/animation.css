@@ -59,10 +59,7 @@
 }
 
 .carousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 40%;
-    gap: 2rem;
+    display: flex;
+    gap: 2 rem;
     overflow-x: auto;
-    overflow-y: hidden;
 }

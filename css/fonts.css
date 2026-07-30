@@ -1,0 +1,25 @@
+
+.font-header{
+    font-size: 64px;
+    font-family:"IBM Plex Sans", sans-serif;
+}
+
+.font-text{
+    font-family:"Nunito", sans-serif;
+}
+
+.font-header-links{
+    color: #4b4b4b;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.header-top-font{
+    font-weight: 500;
+}
+.header-bottom-font{
+    font-size: 18px;
+    font-weight: 600;
+}
