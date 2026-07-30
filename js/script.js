@@ -12,12 +12,9 @@ window.addEventListener("scroll", () => {
 
 
 // Allow carousel window to accept wheel as a scroll input
-const carouselWindow = document.querySelector(".program-mosiac-container-window");
-
-carouselWindow.addEventListener("wheel", (event) => {
-    event.preventDefault();
-    carouselWindow.scrollLeft -= event.deltaY;
-}, { passive: false });
+let targetScroll = 0;
+let currentScroll = 0;
+let raf = null;
 
 // Infinite Carousel
 const carousel = document.querySelector(".carousel");

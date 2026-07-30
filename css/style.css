@@ -9,10 +9,6 @@ p, h1, h2, h3, div, span {
     overflow-wrap: break-word;
 }
 
-* {
-    outline: 1px solid red;
-}
-
 main{
     padding-top: 80px;
 }
