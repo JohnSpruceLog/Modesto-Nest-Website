@@ -23,6 +23,7 @@ body {
 }
 
 .font-header{
+    font-size: 64px;
     font-family:"IBM Plex Sans", sans-serif;
 }
 
@@ -107,7 +108,7 @@ header {
 }
 
 .hero-container {
-    background-image: url("../images/Background_1.png");
+    background-image: url("/images/Background_1.png");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -185,6 +186,11 @@ header {
     display:flex;
     flex-direction:column;
     top: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 .programs-container {
@@ -200,7 +206,7 @@ header {
 }
 
 .programs-background{
-    background-image: url("../images/Background_2.png");
+    background-image: url("/images/Background_2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -208,8 +214,20 @@ header {
 }
 
 .program-mosiac-container-window {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.program-mosiac-container {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+}
+
+.program-mosiac-item {
+  flex: 0 0 15rem;
 }
 
 
@@ -220,14 +238,14 @@ header {
 
 .socials {
     min-height: 100vh;
-    background-image: url("../images/Background_3.png");
+    background-image: url("/images/Background_3.png");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center top;
 }
 
 .socials-background{
-    background-image: url("../images/Background_3.png");
+    background-image: url("/images/Background_3.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;

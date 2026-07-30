@@ -42,11 +42,14 @@ img{
     align-items: center;
     height: 480px;
     gap: 2rem;
+    width: max-content;
 }
 
 .program-mosiac-item{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    flex: 0 0 15rem;
 
     display:flex;
     justify-content: flex-end;
@@ -59,7 +62,7 @@ img{
     background-repeat: no-repeat;
 
     width: 15rem;
-    height: 95%;
+    height: 80%;
 
     position: relative;
     overflow: hidden;
