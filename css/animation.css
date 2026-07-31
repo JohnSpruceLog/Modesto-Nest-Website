@@ -61,6 +61,5 @@
 
 .carousel {
     display: flex;
-    gap: 2 rem;
-    overflow-x: auto;
+
 }

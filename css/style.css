@@ -235,7 +235,7 @@ header {
 
 .program-mosiac-container {
   display: flex;
-  gap: 2rem;
+
   width: max-content;
 }
 
