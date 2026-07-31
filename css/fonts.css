@@ -1,7 +1,10 @@
 
 .font-header{
-    font-size: 64px;
     font-family:"IBM Plex Sans", sans-serif;
+}
+
+.font-header-size{
+    font-size: 64px;
 }
 
 .font-text{
@@ -22,4 +25,19 @@
 .header-bottom-font{
     font-size: 18px;
     font-weight: 600;
+}
+
+.supporters-header{
+    color:white;
+    font-size: 48px;
+    margin-right: 1%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.programs-info-description{
+    text-wrap: normal;
+    font-weight: 500;
+    font-size: 24px;
 }

@@ -24,3 +24,29 @@
     background: black;
     color: white;
 }
+
+.purple-button{
+    background: rgb(230, 132, 230);
+    color: rgb(49, 49, 49);
+}
+
+.white-button{
+    background: white;
+    color: black;
+}
+
+.navy-blue-button{
+    background: #003180;
+    color: white;
+}
+
+.supporters-donate{
+    margin-right:3%;
+}
+
+.socials-interact-button{
+    margin-top: 10%;
+    font-size: 24px;
+    text-wrap: nowrap;
+    padding: 2rem, 15rem;
+}
