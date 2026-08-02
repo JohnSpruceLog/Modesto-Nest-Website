@@ -84,9 +84,44 @@ header {
 
 
 .Header-content{
-
-    
     padding: 0;
+}
+
+.Header-story-button{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    top: 75%;
+    background: white;
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.sub-menu.is-open {
+  display: block;
+}
+
+.sub-menu-item{
+    padding: 1rem;
+    background-color: white;
+}
+
+.sub-menu-item:hover{
+    background-color: rgba(4, 0, 255, 0.055);
+}
+
+.sub-menu-item:hover a{
+    color: #45d391;
 }
 
 .homepage-content{
@@ -223,10 +258,10 @@ header {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
-
+  background-color: color-mix(in srgb, #00000000, black 5%);
 }
 
 .program-mosiac-container-window::-webkit-scrollbar {

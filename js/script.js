@@ -16,26 +16,45 @@ window.addEventListener("scroll", () => {
 const carousel = document.querySelector(".carousel");
 const carouselWindow = document.querySelector(".program-mosiac-container-window");
 
-const setWidth = carousel.scrollWidth / 3;
+const cards = carousel.children;
+const cardsPerCopy = cards.length / 3;
+const setWidth =
+    cards[cardsPerCopy].offsetLeft - cards[0].offsetLeft;
+
+carouselWindow.scrollLeft = setWidth;
 
 // Start in the middle copy
 carouselWindow.scrollLeft = setWidth;
 
 carouselWindow.addEventListener("scroll", () => {
-
     if (carouselWindow.scrollLeft <= 0) {
-        carouselWindow.style.scrollBehavior = "auto";
         carouselWindow.scrollLeft += setWidth;
-        carouselWindow.style.scrollBehavior = "smooth";
-    }
-
-    if (carouselWindow.scrollLeft >= setWidth * 2) {
-        carouselWindow.style.scrollBehavior = "auto";
+    } else if (carouselWindow.scrollLeft >= setWidth * 2) {
         carouselWindow.scrollLeft -= setWidth;
-        carouselWindow.style.scrollBehavior = "smooth";
     }
-
 });
 
-// const carousel = document.querySelector(".carousel");
-// const carouselWindow =  
+carouselWindow.addEventListener("wheel", (event) => {
+    event.preventDefault();
+
+    const rawDelta = Math.abs(event.deltaX) > Math.abs(event.deltaY)
+        ? event.deltaX
+        : event.deltaY;
+
+    // Prevent one unusually large wheel event from skipping a whole copy.
+    const delta = Math.max(-100, Math.min(100, rawDelta));
+
+    carouselWindow.scrollLeft += delta;
+}, { passive: false });
+
+// Sub-menu open on button hover
+const ourStoryButton = document.querySelector(".Header-story-button");
+const subMenu = document.querySelector(".sub-menu");
+
+ourStoryButton.addEventListener("mouseenter", () =>{
+    subMenu.classList.add("is-open");
+})
+
+ourStoryButton.addEventListener("mouseleave", () =>{
+    subMenu.classList.remove("is-open");
+})

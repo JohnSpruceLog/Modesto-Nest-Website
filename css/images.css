@@ -16,7 +16,7 @@ img{
     bottom:0;
     right:-200px;
 
-    width:min(850px, 60vw);
+    width:min(810px, 60vw);
     height:auto;
 
     z-index:0;
@@ -34,11 +34,22 @@ img{
     width: auto;
 }
 
+.kadence-arrow-svg{
+    background-image: url("images/image-arrow-down.svg");
+    aspect-ratio: 1/1;
+    max-width: 10px;
+    width: 10px;
+    max-height: 10px;
+    max-height: 10px;
+    padding-left: .5rem;
+    padding-bottom: .25rem;
+}
+
 
 .program-mosiac-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 480px;
     gap: 2rem;
@@ -46,8 +57,7 @@ img{
 }
 
 .program-mosiac-item{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0;
 
     flex: 0 0 15rem;
 
