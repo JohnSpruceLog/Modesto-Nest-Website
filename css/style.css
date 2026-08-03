@@ -456,6 +456,8 @@ header {
     margin: 0;
     overflow: hidden;
     box-shadow: none;
+    box-sizing: border-box;
+    padding-right: 125px;
 }
 
 .gb-button{
@@ -473,4 +475,12 @@ header {
     word-break: break-word;
     transition: .3s ease;
     display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+}
+
+.email-field{
+    position: relative;
 }
