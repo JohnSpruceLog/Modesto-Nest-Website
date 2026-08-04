@@ -94,12 +94,13 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
 }
 
 .sub-menu{
     display: none;
     position: absolute;
-    top: 75%;
+    top: 100%;
     background: white;
     margin-top: 0;
     list-style-type: none;
@@ -173,6 +174,7 @@ header {
     width:60%;
     z-index:1;
     position: relative;
+    padding: 2rem;
 }
 
 
