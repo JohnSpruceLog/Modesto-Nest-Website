@@ -49,12 +49,12 @@
 
 }
 
-.program-mosiac-container article {
+.program-mosaic-container article {
     transition: transform 0.3s ease;
 }
 
 @media (hover: hover) {
-    .program-mosiac-container article:hover {
+    .program-mosaic-container article:hover {
         transform: scale(1.15);
     }
 }

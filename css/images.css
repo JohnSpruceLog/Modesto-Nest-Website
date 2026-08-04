@@ -46,7 +46,7 @@ img{
 }
 
 
-.program-mosiac-container{
+.program-mosaic-container{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -56,7 +56,7 @@ img{
     width: max-content;
 }
 
-.program-mosiac-item{
+.program-mosaic-item{
     margin: 0;
 
     flex: 0 0 15rem;
@@ -81,7 +81,7 @@ img{
     border: 3px solid white;
 }
 
-.program-mosiac-container-1{
+.program-mosaic-container-1{
 
     background-image:
         linear-gradient(
@@ -93,7 +93,7 @@ img{
     url('../images/Image_About_1.png');
 }
 
-.program-mosiac-container-2 {
+.program-mosaic-container-2 {
     background-image:
         linear-gradient(
             to top,
@@ -104,7 +104,7 @@ img{
     url('../images/Image_About_2.png');
 }
 
-.program-mosiac-container-3 {
+.program-mosaic-container-3 {
     background-image:
         linear-gradient(
             to top,
@@ -115,7 +115,7 @@ img{
     url('../images/Image_About_3.png');
 }
 
-.program-mosiac-container-4{
+.program-mosaic-container-4{
     background-image:
         linear-gradient(
             to top,
@@ -126,7 +126,7 @@ img{
     url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0205e711-4add-457c-aec5-7163dd0ca612/djgwzrg-52efa153-8f60-4e3a-9dec-c9312d576fbd.png/v1/fill/w_1092,h_614/superman___png_by_gmg616_djgwzrg-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjE0IiwicGF0aCI6Ii9mLzAyMDVlNzExLTRhZGQtNDU3Yy1hZWM1LTcxNjNkZDBjYTYxMi9kamd3enJnLTUyZWZhMTUzLThmNjAtNGUzYS05ZGVjLWM5MzEyZDU3NmZiZC5wbmciLCJ3aWR0aCI6Ijw9MTA5MiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.mCQ4k32k5dsc8aX4q-dGDuEv7kBO-khcormR1FSOJdE');
 }
 
-.program-mosiac-container-5{
+.program-mosaic-container-5{
     background-image:
         linear-gradient(
             to top,

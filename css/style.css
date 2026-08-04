@@ -256,7 +256,7 @@ header {
     
 }
 
-.program-mosiac-container-window {
+.program-mosaic-container-window {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
@@ -266,23 +266,22 @@ header {
   background-color: color-mix(in srgb, #00000000, black 5%);
 }
 
-.program-mosiac-container-window::-webkit-scrollbar {
+.program-mosaic-container-window::-webkit-scrollbar {
     display: none;
 }
 
-.program-mosiac-container {
+.program-mosaic-container {
   display: flex;
 
   width: max-content;
 }
 
-.program-mosiac-item {
+.program-mosaic-item {
   flex: 0 0 15rem;
   padding-right: .2%;
   padding-left: .2%;
+  position: relative;
 }
-
-
 
 .socials-container{
     height:auto;
@@ -503,4 +502,21 @@ header {
     justify-content: flex-start;
     margin: 2rem;
     padding: 1rem;
+}
+
+.mosaic-item-description {
+    position: absolute;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s ease;
+
+    background: rgba(0,0,0,.8);
+    color: white;
+
+}
+
+.mosaic-item-description-hovered {
+    opacity: 1;
+    visibility: visible;
 }

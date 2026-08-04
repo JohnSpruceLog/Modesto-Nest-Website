@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 // Infinite carousel
 
 const carousel = document.querySelector(".carousel");
-const carouselWindow = document.querySelector(".program-mosiac-container-window");
+const carouselWindow = document.querySelector(".program-mosaic-container-window");
 
 const cards = carousel.children;
 const cardsPerCopy = cards.length / 3;
@@ -58,3 +58,19 @@ ourStoryButton.addEventListener("mouseenter", () =>{
 ourStoryButton.addEventListener("mouseleave", () =>{
     subMenu.classList.remove("is-open");
 })
+
+// Make mosaic item display a description on hover
+const mosaicItems = document.querySelectorAll(".program-mosaic-item");
+mosaicItems.forEach(item => {
+    const description = item.querySelector(".mosaic-item-description");
+
+    if (!description) return;
+
+    item.addEventListener("mouseenter", () => {
+        description.classList.add("mosaic-item-description-hovered");
+    });
+
+    item.addEventListener("mouseleave", () => {
+        description.classList.remove("mosaic-item-description-hovered");
+    });
+});
