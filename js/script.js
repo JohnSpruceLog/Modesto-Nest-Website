@@ -35,15 +35,13 @@ carouselWindow.addEventListener("scroll", () => {
 });
 
 carouselWindow.addEventListener("wheel", (event) => {
+    if (Math.abs(event.deltaY) > 0) {
+        return;
+    }
+
     event.preventDefault();
 
-    const rawDelta = Math.abs(event.deltaX) > Math.abs(event.deltaY)
-        ? event.deltaX
-        : event.deltaY;
-
-    // Prevent one unusually large wheel event from skipping a whole copy.
-    const delta = Math.max(-100, Math.min(100, rawDelta));
-
+    const delta = Math.max(-100, Math.min(100, event.deltaX));
     carouselWindow.scrollLeft += delta;
 }, { passive: false });
 

@@ -126,7 +126,6 @@ header {
 }
 
 .homepage-content{
-    display: block;
     unicode-bidi: isolate;
     
 }
@@ -165,7 +164,7 @@ header {
 }
 
 .hero-bottom-section{
-    padding: 10% 5%;
+    padding: 10% 0;
     display: flex;
     justify-content: space-between;
 }
@@ -174,7 +173,7 @@ header {
     width:60%;
     z-index:1;
     position: relative;
-    padding: 2rem;
+    
 }
 
 
@@ -188,6 +187,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     position: relative;
+
 }
 
 .connect-container{
@@ -230,8 +230,6 @@ header {
     top: 0;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
     box-sizing: border-box;
 }
 
@@ -282,10 +280,14 @@ header {
   padding-left: .2%;
 }
 
-
+.justify-center{
+    justify-content: center;
+    position: relative;
+}
 
 .socials-container{
-    height:auto;
+    height:auto; 
+    display: flex;
 }
 
 .socials {
@@ -310,9 +312,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 10rem;
+    align-items: flex-start;
     margin-bottom: 0;
+
+    
 }
 
 
@@ -328,13 +331,12 @@ header {
 .members-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
 }
 
 .members-info-text{
     padding: 0;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .members-container {
@@ -412,6 +414,10 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .footer-row-wrapper{
     display: flex;
@@ -503,4 +509,15 @@ header {
     justify-content: flex-start;
     margin: 2rem;
     padding: 1rem;
+}
+
+.section-container{
+    display: block;
+    min-width: 1200px;
+}
+
+.section-padding{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 80px;
 }
