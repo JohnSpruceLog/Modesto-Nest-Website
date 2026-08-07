@@ -521,3 +521,8 @@ header {
     padding-right: 16px;
     padding-top: 80px;
 }
+
+.container-section{
+    width: 100%;
+    max-width: 1200px;
+}
