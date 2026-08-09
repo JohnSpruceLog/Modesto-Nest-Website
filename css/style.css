@@ -197,13 +197,16 @@ header {
 .connect-info{
     display: flex;
     flex-direction: row;       
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; 
+    margin-inline: 0;
 }
 
 .connect-section{
     display:flex;
     flex-direction: column;
+    align-items: flex-start;
+    
 }
 
 .programs-info {
@@ -525,4 +528,11 @@ header {
 .container-section{
     width: 100%;
     max-width: 1200px;
+    margin-inline: auto;
+}
+
+.sections-header{
+    width: calc(100% - 2rem);
+    max-width: 1200px;
+    margin-inline: auto;
 }

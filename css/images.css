@@ -152,6 +152,7 @@ img{
     align-items: center;
     gap: 3rem;
     flex-wrap: wrap;
+    margin-inline: auto;
 }
 
 .socials-image{
