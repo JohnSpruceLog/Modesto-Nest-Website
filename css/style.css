@@ -4,10 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url("fonts.css");
+@import url("responsive.css");
 
-p, h1, h2, h3, div, span {
-    overflow-wrap: break-word;
-}
 
 /* *{
     outline: 1px solid red !important;
@@ -516,7 +514,9 @@ header {
 
 .section-container{
     display: block;
-    min-width: 1200px;
+    min-width: 0;
+    margin-inline: auto;
+    width: min(100% -2rem, 1200px)
 }
 
 .section-padding{

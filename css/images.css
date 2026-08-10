@@ -12,8 +12,7 @@ img{
 }
 
 .hero-image {
-    position:absolute;
-    bottom:0;
+    position: static;
     right:-200px;
 
     width:min(810px, 60vw);
@@ -24,8 +23,11 @@ img{
 
 .hero-image-container{
     width:40%;
-    height: 100%;
+    height: fit-content;
+    display: flex;
     position:relative;
+    justify-content: center;
+    align-items: center;
 }
 
 
