@@ -12,7 +12,7 @@ img{
 }
 
 .hero-image {
-    position: static;
+    position: absolute;
     right:-200px;
 
     width:min(810px, 60vw);

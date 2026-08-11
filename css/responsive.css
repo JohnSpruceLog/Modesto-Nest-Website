@@ -2,4 +2,15 @@
     .hero-section {
         flex-direction: column;
     }
+
+    .hero-info,
+    .hero-image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image {
+        position: static;
+        width: 100%;
+    }
 }
