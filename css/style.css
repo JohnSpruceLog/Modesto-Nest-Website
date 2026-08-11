@@ -361,6 +361,7 @@ header {
     width: 100%;
     margin-top: 2rem;
     justify-items: center; /* Center every grid item */
+    margin-bottom: 2rem;
 }
 
 .members-statement-container img {
