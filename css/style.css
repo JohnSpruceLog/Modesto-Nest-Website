@@ -12,10 +12,6 @@
     box-sizing: border-box;
 }
 
-/* *{
-    outline: 1px solid red !important;
-} */
-
 a {
     text-decoration: none;
 }
@@ -109,6 +105,22 @@ header {
     list-style-type: none;
     padding-left: 0;
     z-index: 1001;
+}
+
+.Header-menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.Header-menu-toggle span {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    margin: 4px 0;
+    background: currentColor;
 }
 
 .Header-story-button:hover .sub-menu,

@@ -9,6 +9,30 @@ window.addEventListener("scroll", () => {
     }
 });
 
+// Mobile navigation toggle
+const menuToggle = document.querySelector(".Header-menu-toggle");
+const mainNavigation = document.querySelector("#main-navigation");
+
+if (menuToggle && mainNavigation) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mainNavigation.classList.toggle("is-open");
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation" : "Open navigation"
+    );
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      mainNavigation.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    }
+  });
+}
+
 
 
 // Infinite carousel

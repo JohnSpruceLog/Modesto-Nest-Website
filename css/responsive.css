@@ -291,6 +291,70 @@
     }
 }
 
+/* Replace the crowded link row with a menu button. */
+@media (max-width: 900px) {
+    main {
+        padding-top: 92px;
+    }
+
+    .top-header {
+        display: none;
+    }
+
+    .Header {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: .75rem 1rem;
+    }
+
+    .Header-menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .Header-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: .75rem 1rem 1rem;
+        background: white;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+    }
+
+    .Header-nav.is-open {
+        display: block;
+    }
+
+    .Header-nav-choices {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .Header-nav-item,
+    .header-bottom-font {
+        display: block;
+        padding: .75rem 0;
+        white-space: normal;
+    }
+
+    .Header-story-button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Header-story-button .sub-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
 .program-mosiac-container-window {
     cursor: grab;
 }
