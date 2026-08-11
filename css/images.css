@@ -39,12 +39,18 @@ img{
 .kadence-arrow-svg{
     background-image: url("images/image-arrow-down.svg");
     aspect-ratio: 1/1;
-    max-width: 10px;
-    width: 10px;
-    max-height: 10px;
-    max-height: 10px;
-    padding-left: .5rem;
-    padding-bottom: .25rem;
+    width: .75rem;
+    height: .75rem;
+    max-width: none;
+    max-height: none;
+    padding: 0;
+    object-fit: contain;
+}
+
+.Header-story-arrow {
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
 }
 
 
@@ -172,11 +178,9 @@ img{
 }
 
 .footer-row-social-image{
-    width: 1rem;
-    height: auto;
-
-    aspect-ratio:1/1;
-    object-fit: cover;
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
     display: block;
 }
 
