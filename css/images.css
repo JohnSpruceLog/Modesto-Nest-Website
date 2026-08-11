@@ -37,7 +37,7 @@ img{
 }
 
 .kadence-arrow-svg{
-    background-image: url("images/image-arrow-down.svg");
+    background-image: url("../images/image-arrow-down.svg");
     aspect-ratio: 1/1;
     width: .75rem;
     height: .75rem;
