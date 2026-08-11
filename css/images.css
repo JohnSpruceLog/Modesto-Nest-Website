@@ -79,7 +79,7 @@ img{
     background-position: center;
     background-repeat: no-repeat;
 
-    width: 15rem;
+    
     height: 80%;
 
     position: relative;
@@ -188,3 +188,5 @@ img{
     max-width: 75%;
     height: auto;
 }
+
+

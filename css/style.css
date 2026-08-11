@@ -566,3 +566,11 @@ header {
     max-width: 1200px;
     margin-inline: auto;
 }
+
+.tech-studio{
+    width: 25rem;
+}
+
+.career-pathway{
+    width: 10rem;
+}
