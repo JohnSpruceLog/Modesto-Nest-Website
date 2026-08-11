@@ -290,3 +290,11 @@
         width: 100%;
     }
 }
+
+.program-mosiac-container-window {
+    cursor: grab;
+}
+
+.program-mosiac-container-window:active {
+    cursor: grabbing;
+}
