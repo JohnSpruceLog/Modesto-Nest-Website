@@ -1,6 +1,65 @@
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        padding-top: 132px;
+    }
+
+    .top-header {
+        display: none;
+    }
+
+    .Header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .75rem;
+        padding: .75rem 1rem;
+    }
+
+    .Header-branding-logo {
+        height: 54px;
+    }
+
+    .Header-nav {
+        width: 100%;
+        padding: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .Header-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .Header-nav-choices {
+        flex-shrink: 0;
+        gap: 1.25rem;
+        padding-bottom: .25rem;
+    }
+
+    .Header-nav-item,
+    .header-bottom-font {
+        white-space: nowrap;
+        font-size: .9rem;
+    }
+
+    .sub-menu {
+        left: 0;
+    }
+
+    .hero-container {
+        min-height: auto;
+        height: auto;
+    }
+
     .hero-section {
         flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        min-height: 100svh;
+        padding: 5rem 1.25rem 2rem;
     }
 
     .hero-info,
@@ -9,8 +68,225 @@
         height: auto;
     }
 
+    .hero-info h1,
+    .socials-section h1,
+    .action-statement-section h1 {
+        font-size: clamp(2.4rem, 11vw, 4rem) !important;
+        line-height: 1.02;
+        text-wrap: balance !important;
+    }
+
+    .hero-info p {
+        font-size: clamp(1.05rem, 4.5vw, 1.5rem) !important;
+        line-height: 1.45;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+    }
+
+    .hero-button {
+        margin: 0;
+        font-size: 1rem !important;
+        padding: .85rem 1.15rem;
+    }
+
     .hero-image {
         position: static;
+        width: min(100%, 34rem);
+        margin: 0 auto;
+    }
+
+    .section-padding {
+        padding: 4rem 1.25rem;
+    }
+
+    .connect-info,
+    .programs-info {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .supporters-header {
+        font-size: clamp(2.25rem, 10vw, 3.5rem) !important;
+        line-height: 1;
+    }
+
+    .donate-button {
+        width: min(10rem, 70vw);
+    }
+
+    .programs-info h1 {
+        font-size: clamp(2.25rem, 10vw, 3.5rem);
+        line-height: 1;
+    }
+
+    .programs-info-description {
+        font-size: 1.1rem;
+        line-height: 1.45;
+    }
+
+    .program-mosiac-container-window {
+        margin-inline: -1.25rem;
+        width: calc(100% + 2.5rem);
+        padding: 0 1.25rem;
+    }
+
+    .program-mosiac-container {
+        height: 390px;
+        gap: 1rem;
+    }
+
+    .program-mosiac-item {
+        flex-basis: min(75vw, 15rem);
+        width: min(75vw, 15rem);
+    }
+
+    .about-container {
+        height: auto;
+    }
+
+    .hero-bottom-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-image-container {
+        max-width: none;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .socials {
+        min-height: auto;
+    }
+
+    /* The desktop aspect-ratio is too short once this section stacks on mobile. */
+    .socials-section {
+        align-items: stretch;
+    }
+
+    .socials-image-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .socials-info-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .socials-interact-button {
+        align-self: stretch;
+        margin-top: .5rem;
+        font-size: 1rem;
+        padding: 1rem;
+        text-wrap: wrap;
+    }
+
+    .members-container {
+        min-height: auto;
+    }
+
+    .members-info-text {
+        font-size: clamp(2rem, 9vw, 3rem) !important;
+        line-height: 1.05;
+    }
+
+    .members-statement-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .members-statement-container img,
+    .member-statement-bottom {
+        grid-column: auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .action-statement-section {
+        padding: 3rem 1.25rem;
+    }
+
+    .Footer {
+        align-items: flex-start;
+        padding: 2rem 1.25rem;
+    }
+
+    .footer-row-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-row-section-format {
+        margin: 0;
+    }
+
+    .footer-row-section-items {
+        width: auto;
+    }
+
+    .footer-bottom-wrapper {
+        margin: 2rem 0 0;
+        padding: 1rem 0;
+    }
+
+    .footer-bottom-text p {
+        font-size: .85rem !important;
+        padding-left: 0 !important;
+    }
+}
+
+/* The social cards are too wide to remain side-by-side in this range. */
+@media (max-width: 1000px) {
+    .socials {
+        min-height: auto;
+    }
+
+    .socials-image-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .socials-info-container {
+        width: min(400px, 100%);
+    }
+
+    .members-container {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding-top: 124px;
+    }
+
+    .Header {
+        gap: .5rem;
+    }
+
+    .hero-section {
+        padding-top: 3.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-button {
         width: 100%;
     }
 }

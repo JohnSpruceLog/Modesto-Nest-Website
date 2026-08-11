@@ -306,12 +306,12 @@ header {
 
 .socials-background{
     background-image: url("/images/Background_3.png");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-
-    aspect-ratio: 2026 / 3453;
-    width: 100%;
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
 }
 
 .socials-section {
